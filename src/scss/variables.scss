@@ -1,0 +1,11 @@
+@import './to-rem.scss';
+
+$color-main: #528265;
+$color-bg: #D7EAE6;
+$color-white: #FFFFFF;
+
+$font-size-l: to-rem(32);
+$font-size-m: to-rem(24);
+$font-size-s: to-rem(18);
+
+$font-weight-l: 700;

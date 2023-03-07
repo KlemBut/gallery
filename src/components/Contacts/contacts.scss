@@ -1,0 +1,12 @@
+@import '../../scss/variables.scss';
+
+.contacts{
+    background-color: $color-main;
+    position: relative;
+    top: -180px; 
+    transition: 0.5s ease-in-out;
+    z-index: -1;
+    &--active{
+        top: 0;
+    }
+}

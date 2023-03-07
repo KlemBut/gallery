@@ -1,0 +1,17 @@
+@import '../../scss/variables.scss';
+@import '../../scss/to-rem.scss';
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: $color-main;
+    padding: to-rem(10) 0;
+    z-index: 0;
+
+    &__nav-button-wrapper{
+        display: flex;
+        align-items: center;
+        margin-right: to-rem(100);
+    }
+}

@@ -1,12 +1,21 @@
 @import '../../scss/variables.scss';
+@import '../../scss/to-rem.scss';
 
 .contacts{
     background-color: $color-main;
-    position: relative;
-    top: -180px; 
-    transition: 0.5s ease-in-out;
-    z-index: -1;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height 0.4s linear;
+       -moz-transition: height 0.4s linear;
+        -ms-transition: height 0.4s linear;
+         -o-transition: height 0.4s linear;
+            transition: height 0.4s linear;
     &--active{
-        top: 0;
+        height: 200px;
+        -webkit-transition: height 0.4s linear;
+           -moz-transition: height 0.4s linear;
+            -ms-transition: height 0.4s linear;
+             -o-transition: height 0.4s linear;
+                transition: height 0.4s linear;
     }
 }

@@ -1,0 +1,35 @@
+@import '../../scss/variables.scss';
+@import '../../scss/to-rem.scss';
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: to-rem(20);
+    align-items: center;
+    @media only screen and (max-width: 500px){
+        flex-direction: column;
+    }
+    &--top, &--bottom{
+        display: flex;
+        gap: to-rem(20);
+        max-width: 1000px;
+        @media only screen and (max-width: 500px){
+            flex-direction: column;
+        }
+        &__side {
+            display: flex;
+            flex-direction: column;
+            gap: to-rem(20);
+            @media only screen and (max-width: 500px){
+                flex-direction: column;
+            }
+        }
+    }
+    &--bottom{
+        flex-direction: row-reverse;
+        @media only screen and (max-width: 500px){
+            flex-direction: column;
+        }
+    }
+}

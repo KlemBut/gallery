@@ -1,0 +1,31 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/to-rem.scss';
+
+.album-cover {
+  position: relative;
+  &__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  &__name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: #ffffff;
+    background-color: rgba($color: #528265, $alpha: 0.5);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s ease-in-out;
+    font-size: $font-size-l;
+    text-align: center;
+  }
+  &__name:hover{
+    cursor: pointer;
+    background-color: rgba($color: #528265, $alpha: 0.8);
+    font-weight: $font-weight-l;
+  }
+}
